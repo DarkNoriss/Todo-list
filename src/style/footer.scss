@@ -1,0 +1,21 @@
+$footer-bgcolor: #2e3532;
+
+.footer {
+  width: 100%;
+  background-color: $footer-bgcolor;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+
+  & a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+}

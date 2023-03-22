@@ -1,0 +1,9 @@
+$header-bgcolor: #2e3532;
+
+.header {
+  background-color: $header-bgcolor;
+  & h1 {
+    margin: 1rem 2rem;
+    font-size: 4rem;
+  }
+}
