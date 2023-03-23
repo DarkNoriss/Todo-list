@@ -5,6 +5,7 @@ const myTasks = loadData() || [];
 export const createApp = () => {
   createNavAndList();
   fillNav();
+  if (myTasks != false) drawTask();
 };
 
 const createNavAndList = () => {
@@ -33,4 +34,31 @@ const addTask = () => {
   modal.showModal();
 };
 
-const loadData = () => {};
+const drawTask = () => {
+  console.log("hey");
+};
+
+export const submit = (event) => {
+  const taskName = event.target["task-name"].value;
+  const taskDesc = event.target["task-desc"].value;
+
+  const task = {
+    name: taskName,
+    desc: taskDesc,
+  };
+  // push into tasksarray, update localstorage and draw task grid
+  myTasks.push(task);
+  updateData();
+  // reset form
+  const form = document.querySelector(".form-task");
+  form.reset();
+};
+
+function loadData() {
+  const tasksArrayStr = localStorage.getItem("tasksArray");
+  const tasksArray = JSON.parse(tasksArrayStr);
+  return tasksArray;
+}
+function updateData() {
+  localStorage.setItem("tasksArray", JSON.stringify(myTasks));
+}

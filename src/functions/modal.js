@@ -1,3 +1,5 @@
+import { submit } from "./app";
+
 export const getModal = () => {
   const modal = document.querySelector("dialog") || createModal();
   return modal;
@@ -40,16 +42,4 @@ const createModal = () => {
   body.append(modal);
 
   return modal;
-};
-
-const submit = (event) => {
-  const taskName = event.target["task-name"].value;
-  const taskDesc = event.target["task-desc"].value;
-
-  const task = {
-    name: taskName,
-    desc: taskDesc,
-  };
-
-  console.log([task]);
 };
