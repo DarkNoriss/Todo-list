@@ -3,7 +3,7 @@ import "./style/header.scss";
 import "./style/app.scss";
 import "./style/footer.scss";
 import { createHeader } from "./functions/createHeader";
-import { createApp } from "./functions/createApp";
+import { createApp } from "./functions/app";
 import { createFooter } from "./functions/createFooter";
 
 window.onload = () => {

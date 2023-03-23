@@ -1,4 +1,4 @@
-import { getModal } from "./createModal";
+import { getModal } from "./modal";
 
 export const createApp = () => {
   createNavAndList();
