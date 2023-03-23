@@ -10,6 +10,7 @@ const createModal = () => {
   const form = document.createElement("form");
   form.classList.add("form-task");
   form.method = "dialog";
+  form.addEventListener("submit", submit);
 
   const header = document.createElement("h2");
   header.innerText = "Creating task";
@@ -19,6 +20,7 @@ const createModal = () => {
   inputName.placeholder = "Name";
   inputName.type = "text";
   inputName.name = "task-name";
+  inputName.required = true;
   form.append(inputName);
 
   const inputDesc = document.createElement("textarea");
@@ -38,4 +40,16 @@ const createModal = () => {
   body.append(modal);
 
   return modal;
+};
+
+const submit = (event) => {
+  const taskName = event.target["task-name"].value;
+  const taskDesc = event.target["task-desc"].value;
+
+  const task = {
+    name: taskName,
+    desc: taskDesc,
+  };
+
+  console.log([task]);
 };

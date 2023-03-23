@@ -1,5 +1,7 @@
 import { getModal } from "./modal";
 
+const myTasks = loadData() || [];
+
 export const createApp = () => {
   createNavAndList();
   fillNav();
@@ -30,3 +32,5 @@ const addTask = () => {
   const modal = getModal();
   modal.showModal();
 };
+
+const loadData = () => {};
