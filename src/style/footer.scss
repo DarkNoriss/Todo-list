@@ -1,8 +1,8 @@
-$footer-bgcolor: #2e3532;
+@import "./variable.scss";
 
 .footer {
   width: 100%;
-  background-color: $footer-bgcolor;
+  background-color: $headerfooter-bgcolor;
   color: #fff;
   display: flex;
   justify-content: center;

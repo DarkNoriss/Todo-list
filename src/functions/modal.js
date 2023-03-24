@@ -22,6 +22,7 @@ const createModal = () => {
   inputName.placeholder = "Name";
   inputName.type = "text";
   inputName.name = "task-name";
+  inputName.maxLength = "10";
   inputName.required = true;
   form.append(inputName);
 

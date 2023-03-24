@@ -1,7 +1,8 @@
-$header-bgcolor: #2e3532;
+@import "./variable.scss";
 
 .header {
-  background-color: $header-bgcolor;
+  background-color: $headerfooter-bgcolor;
+
   & h1 {
     margin: 1rem 2rem;
     font-size: 4rem;

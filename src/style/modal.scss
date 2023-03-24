@@ -1,6 +1,4 @@
-$btn-hover: #94849b;
-$nav-bgcolor: #a0aab2;
-
+@import "./variable.scss";
 .modal {
   border-radius: 1rem;
   padding: 1rem;
@@ -18,12 +16,14 @@ $nav-bgcolor: #a0aab2;
       font-size: 4rem;
       color: #fff;
     }
+
     & input {
       padding: 1rem;
       font-size: 1.5rem;
       border-radius: 1rem;
       border-style: solid;
     }
+
     & textarea {
       padding: 1rem;
       font-size: 1.5rem;
@@ -31,6 +31,7 @@ $nav-bgcolor: #a0aab2;
       padding-bottom: 6rem;
       resize: none;
     }
+
     & button {
       align-self: center;
       width: 200px;
